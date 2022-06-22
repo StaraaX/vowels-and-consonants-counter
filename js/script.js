@@ -24,7 +24,7 @@ function counter() {
         if (char.match(/[0-9]/gi)) number++;
         else {
             if (char.match(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/gi) != null) symbols++;
-            else space++;
+            if (char.match(" ") != null) space++;
         }
 
     }
