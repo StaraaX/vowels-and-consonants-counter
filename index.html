@@ -8,13 +8,17 @@
     <title>vowels and consonants counter</title>
 </head>
 <body>
-    <div id="text_area">
-        <label for="textarea">Text here :</label>
-        <textarea name="text" id="textarea" cols="30" rows="1"></textarea>
-    </div>    
- 
-        <button onclick="counter()">Count :</button>
-
+<div class="big_container">
+            <div id="text_area">
+                <label for="textarea">Text here :</label>
+                <textarea name="text" id="textarea" cols="30" rows="1" maxlength="30" required placeholder="Type text here (max-length 30)"></textarea>
+            </div>    
+            <div id="container_btn">
+                <button id="btn" onclick="counter()">Count :</button>
+                <h1>Press the Count button or just press "Enter" on your keyboard </h1>
+            </div>
+        
+</div>
 </body>
 <script src="js/script.js"></script>
 </html>

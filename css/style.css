@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+@keyframes dropIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    55%{
+        opacity: 0.75;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes showFromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+*{
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: rgb(26, 24, 36);
+    color: white;
+    margin: 0px;
+}
+.big_container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text_area,#btn{
+    animation:dropIn  3s;}
+#text_area{
+    margin-top: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+label{
+    margin: 0px 30px;
+    font-size: 20px;
+
+}
+
+
+textarea{
+    width:50%;
+    padding: 15px 5px;
+    outline: none;
+    color: black;
+    border-color: rgba(138, 43, 226,0.5);
+    font-size: 25px;
+    text-align: center;
+    border-radius: 12px;
+    resize: none;
+    transition: all 1s;
+    background-color:rgb(255, 255, 255) ;
+    word-spacing: 5px;
+}
+textarea:focus{
+    letter-spacing: 4px;
+    word-spacing: 4px;
+}
+textarea:hover{
+    border-color: rgb(91, 16, 161);
+    background-color: rgb(231, 226, 226);
+}
+#container_btn{
+    margin-top: 50px;
+    text-align: center;
+}
+#btn{
+    border-color: aqua;
+    border-radius: 4px;
+    padding: 20px 30px;
+    background-color:rgba(148, 0, 211,0.5);
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 1s;
+}
+#btn:hover{
+    background-color:rgba(148, 0, 211,1);
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 20px;
+    animation: showFromBottom  1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
